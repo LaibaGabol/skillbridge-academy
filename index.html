@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillBridge Academy — Learn. Build. Launch.</title>
+  <meta name="description" content="Master Python, Data Science & Web Dev with project-based courses built for real careers."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+
+  <!-- GA4: Replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">Skill<span>Bridge</span></a>
+      <ul class="nav-links">
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-nav" onclick="gtag('event','cta_click',{event_category:'nav',event_label:'Get Started'})">Get Started</a>
+      <button class="burger" id="burger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#courses" onclick="closeMenu()">Courses</a>
+    <a href="#why" onclick="closeMenu()">Why Us</a>
+    <a href="#testimonials" onclick="closeMenu()">Stories</a>
+    <a href="#contact" onclick="closeMenu()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag">🚀 Over 3,000 students enrolled</div>
+      <h1>Turn Skills Into<br/><span class="accent">Real Careers.</span></h1>
+      <p class="hero-sub">Project-based courses in Python, Data Science &amp; Web Development. Built for people who want results, not just certificates.</p>
+      <div class="hero-btns">
+        <a href="#courses" class="btn-primary" onclick="gtag('event','cta_click',{event_category:'hero',event_label:'Browse Courses'})">Browse Courses</a>
+        <a href="#contact" class="btn-ghost" onclick="gtag('event','cta_click',{event_category:'hero',event_label:'Free Syllabus'})">Get Free Syllabus</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>94%</strong><span>job placement</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>3K+</strong><span>graduates</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>4.9★</strong><span>avg rating</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-top"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+        <pre class="code-block"><span class="c-comment"># Your first Python program</span>
+<span class="c-keyword">def</span> <span class="c-fn">greet_student</span>(name):
+    <span class="c-keyword">return</span> f<span class="c-str">"Welcome, {name}!"</span>
+
+student = <span class="c-str">"You"</span>
+<span class="c-fn">print</span>(greet_student(student))
+
+<span class="c-comment"># Output:</span>
+<span class="c-green-t">▶ Welcome, You!</span></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-label">What We Teach</div>
+      <h2>Choose Your <span class="accent">Path</span></h2>
+      <div class="courses-grid">
+        <div class="course-card" onclick="gtag('event','course_click',{event_category:'courses',event_label:'Python'})">
+          <div class="course-icon" style="background:#f0faf4;color:#16a34a">🐍</div>
+          <div class="course-tag">Beginner → Advanced</div>
+          <h3>Python Mastery</h3>
+          <p>From variables to building real apps. Automate tasks, build scripts, and land your first dev role.</p>
+          <ul class="course-features">
+            <li>✓ 48 hours of content</li>
+            <li>✓ 12 real projects</li>
+            <li>✓ Career mentorship</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-price">$149 <s>$299</s></span>
+            <a href="#contact" class="btn-small">Enroll Now</a>
+          </div>
+        </div>
+        <div class="course-card featured" onclick="gtag('event','course_click',{event_category:'courses',event_label:'Data Science'})">
+          <div class="featured-badge">Most Popular</div>
+          <div class="course-icon" style="background:#fef9ec;color:#d97706">📊</div>
+          <div class="course-tag">Intermediate</div>
+          <h3>Data Science Pro</h3>
+          <p>pandas, NumPy, ML models, and real dashboards. Get job-ready with actual datasets from day one.</p>
+          <ul class="course-features">
+            <li>✓ 60 hours of content</li>
+            <li>✓ Kaggle projects</li>
+            <li>✓ Portfolio review</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-price">$199 <s>$399</s></span>
+            <a href="#contact" class="btn-small">Enroll Now</a>
+          </div>
+        </div>
+        <div class="course-card" onclick="gtag('event','course_click',{event_category:'courses',event_label:'Web Dev'})">
+          <div class="course-icon" style="background:#eff6ff;color:#2563eb">🌐</div>
+          <div class="course-tag">Beginner → Pro</div>
+          <h3>Full Stack Web Dev</h3>
+          <p>HTML to React to Node.js. Build and deploy real products that look stunning and work flawlessly.</p>
+          <ul class="course-features">
+            <li>✓ 55 hours of content</li>
+            <li>✓ 8 live projects</li>
+            <li>✓ Deploy to production</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-price">$179 <s>$349</s></span>
+            <a href="#contact" class="btn-small">Enroll Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section class="section dark-section" id="why">
+    <div class="container">
+      <div class="section-label light">Why SkillBridge</div>
+      <h2 class="light-h2">Built Different. <span class="accent">On Purpose.</span></h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">⚡</div>
+          <h4>Project-First Learning</h4>
+          <p>No boring theory dumps. Every lesson ends with something you built yourself.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🧑‍💻</div>
+          <h4>1-on-1 Mentorship</h4>
+          <p>Real instructors who've worked at top companies. Not just pre-recorded videos.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📈</div>
+          <h4>Career Support</h4>
+          <p>Resume reviews, mock interviews, and job referrals until you land the role.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🌍</div>
+          <h4>Learn Anywhere</h4>
+          <p>Mobile-first platform. Lifetime access. Study at your pace, on your schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-label">Student Stories</div>
+      <h2>People Who <span class="accent">Made the Leap</span></h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"I went from zero coding experience to landing a junior dev role in 6 months. SkillBridge gave me the structure I needed."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:#dbeafe;color:#1d4ed8">AS</div>
+            <div><strong>Aisha Siddiqui</strong><br/><span>Frontend Dev @ Afiniti</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"The Data Science course was exactly what I needed. Real projects, real data. My salary doubled after completing it."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:#dcfce7;color:#15803d">ZK</div>
+            <div><strong>Zain Khan</strong><br/><span>Data Analyst @ Careem</span></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p>"Best investment I ever made. My mentor reviewed my portfolio three times until it was perfect. That level of support is rare."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background:#fef3c7;color:#b45309">MR</div>
+            <div><strong>Maha Rehman</strong><br/><span>Python Dev @ Systems Ltd</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / BREVO FORM -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="section-label">Get In Touch</div>
+          <h2>Start Your <span class="accent">Journey Today</span></h2>
+          <p>Drop your details and we'll send you a free course syllabus + our career guide. No spam, ever.</p>
+          <div class="contact-perks">
+            <div>📩 Free syllabus in your inbox</div>
+            <div>🎯 Personalized course recommendation</div>
+            <div>💬 Free 15-min career call</div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <!--
+          =====================================================
+          BREVO FORM SETUP INSTRUCTIONS:
+          1. Sign up free at brevo.com
+          2. Go to: Contacts → Forms → Create a Form
+          3. Add fields: First Name, Email, a Dropdown for Course
+          4. In Settings → choose list "SkillBridge Leads"
+          5. Copy the embed code Brevo gives you
+          6. DELETE the form below and PASTE your Brevo code here
+          =====================================================
+          -->
+          <div class="form-card" id="brevo-form-area">
+            <form id="lead-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="FIRSTNAME" placeholder="Your first name" required/>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="EMAIL" placeholder="you@email.com" required/>
+              </div>
+              <div class="form-group">
+                <label for="course">Interested In</label>
+                <select id="course" name="COURSE">
+                  <option value="">Select a course...</option>
+                  <option value="python">Python Mastery</option>
+                  <option value="data">Data Science Pro</option>
+                  <option value="webdev">Full Stack Web Dev</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-primary full-width">
+                Send Me the Free Syllabus →
+              </button>
+              <p class="form-note">🔒 We respect your privacy. Unsubscribe anytime.</p>
+            </form>
+            <div id="form-success" style="display:none;" class="form-success">
+              <div class="success-icon">✅</div>
+              <h3>You're in!</h3>
+              <p>Check your inbox — your free syllabus is on its way.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="logo">Skill<span>Bridge</span> <small>Academy</small></div>
+      <div class="footer-links">
+        <a href="#courses">Courses</a>
+        <a href="#why">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 SkillBridge Academy. Built for learners everywhere.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
