@@ -326,7 +326,7 @@ student = <span class="c-str">"You"</span>
         <span class="sib-form-message-panel__inner-text">
 
 
-                Successfully sent
+                Your subscription has been successful.
              
             
           </span>
@@ -334,14 +334,15 @@ student = <span class="c-str">"You"</span>
     </div>
     <div></div>
     <div id="sib-container" class="sib-container--large sib-container--vertical" style="max-width:540px; text-align:center; background-color:rgba(255,255,255,1); border-width:1px; border-style:solid; border-color:#C0CCD9; border-radius:3px; direction:ltr">
-      <form id="sib-form" method="POST" action="https://0a6ce4d6.sibforms.com/serve/MUIFAOtSQT45syqggDK69xRLLKDcHmBv-ujWl7a9YLWH8eTVtnYGO13Q__f0XMaa8SRLrAaNjqI6siQ9kvBl0lmzPqI3drHvJhkmyDLru4KmKFESmMMFD18ViBs1SYILqxDHoFmpII86IQkheimGHHKjOubE9f0HuVghqcbnmrSBbT75-y0xuJA1KRnuS6xMN5MgcAsIV1TpIsgWRA==" data-type="subscription">
+      <form id="sib-form" method="POST" action="https://0a6ce4d6.sibforms.com/serve/MUIFAOcTtBi1_GrvbF8obBAJ1HudAYbUvshg8AN71HXOxFvkWEAPcWXr_dt9PbvPdyfHycDTJWQiYdyoGOyBnB1ic3ONXSnMR8IaJyedDwpEkP35vKKk13wBgxvYvdSVWIiBAPLOiVIBDWZTfmCLcCXM7APSdQChHmbTBAfWtmD2rQsNMI18adtefHiIb-Qgnxhic3OmoDTS0Mn4ZQ==" data-type="subscription">
 
 
         <div style="padding: 8px 0;">
 
 
-          <div class="sib-form-block" style="font-family:Helvetica, sans-serif; font-size:25px; font-weight:700; text-align:left; color:#7746f4; background-color:transparent; text-align:left">
+          <div class="sib-form-block" style="font-family:Helvetica, sans-serif; font-size:25px; font-weight:700; text-align:left; color:#6b17ca; background-color:transparent; text-align:left">
             <p>Welcome To SkillBridge-Academy</p>
+            <p><br></p>
           </div>
 
 
@@ -359,7 +360,7 @@ student = <span class="c-str">"You"</span>
               <div class="form__label-row ">
 
 
-                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="FIRSTNAME" data-required="*">Enter your FIRSTNAME</label>
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="FIRSTNAME" data-required="*">FIRSTNAME</label>
 
 
 
@@ -376,10 +377,6 @@ student = <span class="c-str">"You"</span>
               </label>
 
 
-
-              <label class="entry__specification" style="font-family:Helvetica, sans-serif; font-size:12px; text-align:left; color:#8390A4; text-align: left ">
-                Customize this optional help text before publishing your form.
-              </label>
 
             </div>
           </div>
@@ -418,10 +415,6 @@ student = <span class="c-str">"You"</span>
 
 
 
-              <label class="entry__specification" style="font-family:Helvetica, sans-serif; font-size:12px; text-align:left; color:#8390A4; text-align: left ">
-                Customize this optional help text before publishing your form.
-              </label>
-
             </div>
           </div>
 
@@ -435,34 +428,114 @@ student = <span class="c-str">"You"</span>
         <div style="padding: 8px 0;">
 
 
+          <div class="sib-form-block sib-divider-form-block">
+            <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
+          </div>
 
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+
+
+          <div class="sib-multiselect sib-form--blockPosition sib-form-block " data-required="true">
+            <div class="form__entry">
               <div class="form__label-row ">
 
 
-                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="COURSES" data-required="*">Enter your COURSES</label>
-
+                <label class="entry__label" style="font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858; text-align: left" for="lists" data-required="*">SELECT COURSE</label>
 
 
 
                 <div class="entry__field">
+                  <div class="input input_display input--multiselect input--centerText" style="padding-right:">
 
-                  <input class="input " maxlength="200" type="text" id="COURSES" name="COURSES" autocomplete="off" placeholder="COURSES" data-required="true" required />
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    0 lists selected
+
+
+
+                  </div>
+                  <input id="lists" class="input" name="lists_34[]" type="hidden" value="[]" />
                 </div>
-
               </div>
-
               <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
               </label>
 
 
 
-              <label class="entry__specification" style="font-family:Helvetica, sans-serif; font-size:12px; text-align:left; color:#8390A4; text-align: left ">
-                Customize this optional help text before publishing your form.
-              </label>
+            </div>
+            <div class="sib-menu" style="text-align: left ">
+              <div class="sib-menu__select sib-menu__selectTextAlign">
+                <button type="button" class="clickable_link sib-menu__select-all-button">
+                  Select all
+                </button>
+                <span class="sib-menu__separator">/</span>
+                <button type="button" class="clickable_link sib-menu__clear-button">
+                  Clear
+                </button>
+              </div>
+              <ul class="sib-menu__item-list">
 
+                <li class="sib-menu__item">
+                  <div class="entry__choice" style="text-indent:"><label class="sib-multiselect__label">
+                      <input type="checkbox" class="input_replaced" data-value="15">
+                      <span class="checkbox checkbox_tick_positive"></span>
+                      <span class="sib-multiselect__label-text">Datascience leads</span>
+                    </label></div>
+                </li>
+
+                <li class="sib-menu__item">
+                  <div class="entry__choice" style="text-indent:"><label class="sib-multiselect__label">
+                      <input type="checkbox" class="input_replaced" data-value="13">
+                      <span class="checkbox checkbox_tick_positive"></span>
+                      <span class="sib-multiselect__label-text">Python leads</span>
+                    </label></div>
+                </li>
+
+                <li class="sib-menu__item">
+                  <div class="entry__choice" style="text-indent:"><label class="sib-multiselect__label">
+                      <input type="checkbox" class="input_replaced" data-value="14">
+                      <span class="checkbox checkbox_tick_positive"></span>
+                      <span class="sib-multiselect__label-text">Webdev leads</span>
+                    </label></div>
+                </li>
+
+                <li class="sib-menu__item">
+                  <div class="entry__choice" style="text-indent:"><label class="sib-multiselect__label">
+                      <input type="checkbox" class="input_replaced" data-value="12">
+                      <span class="checkbox checkbox_tick_positive"></span>
+                      <span class="sib-multiselect__label-text">All leads</span>
+                    </label></div>
+                </li>
+
+              </ul>
+              <div class="sib-menu__apply">
+                <button type="button" class="sib-menu__cancel-button clickable_link">
+                  Cancel
+                </button>
+                <button type="button" class="sib-menu__apply-button clickable_button">
+                  Apply
+                </button>
+              </div>
             </div>
           </div>
 
@@ -492,7 +565,7 @@ student = <span class="c-str">"You"</span>
 
 
           <div class="sib-form-block" style="text-align: left">
-            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#FFFFFF; background-color:#a431e5; border-width:0px; border-radius:3px;" form="sib-form" type="submit">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#FFFFFF; background-color:#6b17ca; border-width:0px; border-radius:3px;" form="sib-form" type="submit">
               <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
                 <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
               </svg>
